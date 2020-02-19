@@ -1,0 +1,71 @@
+* {
+    color: whitesmoke;
+}
+
+body{
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(89,28,204,1) 46%, rgba(2,0,36,1) 100%);
+}
+
+/* Header */
+
+.current{
+    font-weight: bold;
+}
+
+/* Page Accueil */
+
+header{
+    margin-bottom: 0;
+    padding-bottom: 1em;
+}
+
+#profil{
+    width: 100%;
+    height: auto;
+    border-radius: 4em;
+    border: solid;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+footer{
+    padding-top: 2em;
+}
+
+/* Page Parcours (Perso) */
+
+.taille{
+    width: 100%;
+    height: auto;
+}
+
+h5{
+    color: black;
+}
+
+.card-text{
+    color: black;
+}
+
+/* Page Expériences (Pro) */
+
+/* Page Formulaire */
+
+form{
+    text-align: center;
+}
+
+input, textarea{
+    margin-top: 0.5vh;
+    width: 15rem;
+    resize: none;
+    color: black;
+}
+
+button{
+    margin-top: 1em;
+    color: black;
+}
