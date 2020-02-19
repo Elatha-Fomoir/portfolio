@@ -56,3 +56,4 @@ $route['translate_uri_dashes'] = FALSE;
 $route['professionnel'] = 'welcome/pro';
 $route['parcours'] = 'welcome/perso';
 $route['formulaire'] = 'welcome/formulaire';
+$route['mail'] = 'welcome/envoyeMailContact';

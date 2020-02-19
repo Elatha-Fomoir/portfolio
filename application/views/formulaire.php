@@ -5,29 +5,29 @@
             <form id="form-contact">
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="registerPrenom">Prénom *</label>
+                        <label for="prenom">Prénom *</label>
                         <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Prénom">
                         <p class="field-error" data-field="registerPrenom"></p>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="registerNom">Nom *</label>
+                        <label for="nom">Nom *</label>
                         <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom">
                         <p class="field-error" data-field="registerNom"></p>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="registerEmail">Courriel *</label>
+                    <label for="adresseMail">Courriel *</label>
                     <input type="email" class="form-control" id="adresseMail" name="adresseMail" placeholder="Courriel">
                     <p class="field-error" data-field="registerEmail"></p>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="registerPost">Poste</label>
+                        <label for="poste">Poste</label>
                         <input type="text" class="form-control" id="poste" name="poste" placeholder="Poste">
                         <p class="field-error" data-field="registerPost"></p>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="registerSociete">Entreprise</label>
+                        <label for="nomEntreprise">Entreprise</label>
                         <input type="text" class="form-control" id="nomEntreprise" name="nomEntreprise" placeholder="Entreprise">
                         <p class="field-error" data-field="registerSociete"></p>
                     </div>
@@ -35,7 +35,7 @@
                 <div class="form-group">
                     <div class="form-group col-md-12">
                         <label for="registerMessage">Message *</label>
-                        <input type="text" class="form-control" for="registerMessage" id="contenu" name="contenu" placeholder="Samsung">
+                        <input type="text" class="form-control" for="contenu" id="contenu" name="contenu" placeholder="Samsung">
                         <p class="field-error" data-field="registerMessage"></p>
                     </div>
                 </div>

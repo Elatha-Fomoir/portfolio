@@ -5,7 +5,7 @@
         //console.log('couocu');
         let formData = $(this).serialize();
         let btnSubmit = $('button.btn-envoyer-contact');
-        let url = /portfolioAntoineM/ + 'contact/mail/validation';
+        let url = site_url + 'mail';
         var elementSelected = $('p.field-error');
 
         $.ajax({
@@ -34,7 +34,7 @@
                         timer : 1500
                     });
                     setTimeout(function(){
-                        window.location.href = /portfolioAntoineM/ + 'formulaire';
+                        window.location.href = site_url + 'accueil';
                     }, 1500);
 
                 }

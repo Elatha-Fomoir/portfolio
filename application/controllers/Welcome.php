@@ -151,6 +151,7 @@ class Welcome extends MY_Controller {
         $this->data['js'] = $this->layout->add_js(array(
             'assets/plugins/jquery-3.3.1.min',
             'assets/plugins/bootstrap/js/bootstrap.min',
+            'assets/js/main',
         ));
 
         // Chargement de la vue
@@ -185,30 +186,21 @@ class Welcome extends MY_Controller {
 
         $rulesArray = array(
             array(
-                'field' => 'registerPrenom',
+                'field' => 'prenom',
                 'label' => 'Prenom',
                 'rules' => 'trim|required|encode_php_tags|max_length[12]'
             ),
             array(
-                'field' => 'registerNom',
+                'field' => 'nom',
                 'label' => 'Nom',
                 'rules' => 'trim|encode_php_tags|required|max_length[12]'
             ),
             array(
-                'field' => 'registerEmail',
+                'field' => 'adresseMail',
                 'label' => 'Email',
                 'rules' => 'trim|required|valid_email|encode_php_tags|matches[registerConfirmEmail]'
             ),
-            array(
-                'field' => 'registerConfirmEmail',
-                'label' => 'Confirmation Email',
-                'rules' => 'trim|required|valid_email|encode_php_tags'
-            ),
-            array(
-                'field' => 'registerVille',
-                'label' => 'Ville',
-                'rules' => 'trim|encode_php_tags'
-            ),
+
             array(
                 'field' => 'registerPost',
                 'label' => 'Post',
@@ -241,13 +233,13 @@ class Welcome extends MY_Controller {
 
 
 
-            $data['Prenom'] = $this->input->post('registerPrenom');
+            $data['prenom'] = $this->input->post('prenom');
             $data['Nom'] = $this->input->post('registerNom');
             $data['Mail'] = $this->input->post('registerEmail');
             $data['Ville'] = $this->input->post('registerVille');
             $data['Poste'] = $this->input->post('registerPost');
             $data['Societe'] = $this->input->post('registerSociete');
-            $data['Message'] = $this->input->post('registerMessage');
+            $donne['Message'] = $this->input->post('registerMessage');
 
 
             header('Content-type:application/json');
@@ -257,6 +249,7 @@ class Welcome extends MY_Controller {
             ));
 
             $this->db->insert('contact', $data);
+            $this->db->insert('message', $donnee);
         }
 
     }}
