@@ -1,8 +1,9 @@
+
 <div class="container btn-contact">
     <div class="row mt-5">
         <div class="col-12">
             <p class="mt-5">* Champ Obligatoire</p>
-            <form id="form-contact">
+            <form id="form-contact" method="post">
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="prenom">Prénom *</label>
@@ -41,47 +42,6 @@
                 </div>
                 <button class="btn btn-lg btn-gold btn-block mt-4 btn-envoyer-contact" type="submit">Envoyer</button>
             </form>
-        </div>
-    </div>
-
-</div>
-
-<div class="container btn-recommandation">
-    <div class="row mt-5">
-        <div class="col-12">
-            <p class="mt-5">* Champ Obligatoire</p>
-            <form id="form-recommandation">
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="registerNomReco">Nom *</label>
-                        <input type="text" class="form-control" id="registerNomReco" name="registerNomReco" placeholder="Société">
-                        <p class="field-error" data-field="registerNomReco"></p>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="registerPrenomReco">Prénom *</label>
-                        <input type="text" class="form-control" id="registerPrenomReco" name="registerPrenomReco" placeholder="Directeur SAV">
-                        <p class="field-error" data-field="registerPrenomReco"></p>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="registerSociete">Société *</label>
-                        <input type="text" class="form-control" id="registerSociete" name="registerSociete" placeholder="Société">
-                        <p class="field-error" data-field="registerSociete"></p>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="registerEmployeur">Poste *</label>
-                        <input type="text" class="form-control" id="registerEmployeur" name="registerEmployeur" placeholder="Directeur SAV">
-                        <p class="field-error" data-field="registerEmployeur"></p>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="registerMessageReco">Message *</label>
-                    <input type="text" class="form-control" id="registerMessageReco" name="registerMessageReco" placeholder="Message">
-                    <p class="field-error" data-field="registerMessageReco"></p>
-                </div>
-                <button class="btn btn-lg btn-gold btn-block mt-4 btn-envoyer-recommandation" type="submit">Envoyer</button>
-                <form/>
         </div>
     </div>
 </div>

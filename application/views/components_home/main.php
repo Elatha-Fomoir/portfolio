@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php $this->load->view('components_home/head', $css) ?>
+<?php   $this->load->view('components_home/head', $css) ?>
 
 <body class="landing-page">
 

@@ -84,8 +84,9 @@ class Auth extends MY_Controller {
 		if ($this->form_validation->run() == FALSE) {
 			header("Content-type:application/json");
 			echo json_encode($this->form_validation->get_all_errors());
+  
 		} else {
-
+  
 			$encryptedPassword = $this->userManager->hash_generate($this->input->post('register_password'));
 			// die(var_dump($encryptedPassword));
 
